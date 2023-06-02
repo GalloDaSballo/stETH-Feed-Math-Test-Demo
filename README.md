@@ -2,6 +2,13 @@
 
 Check upward and downward changes
 
+
+## Run
+`forge test -vvv `
+
+
+## Output
+
 Running 3 tests for test/SampleContract.t.sol:ReadTest
 [PASS] test_downwardDepeg() (gas: 60374)
 Logs:
