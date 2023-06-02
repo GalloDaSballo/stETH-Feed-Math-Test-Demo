@@ -1,27 +1,19 @@
-# foundry-template • [![CI](https://github.com/transmissions11/foundry-template/actions/workflows/tests.yml/badge.svg)](https://github.com/transmissions11/foundry-template/actions/workflows/tests.yml)
+# FUZZ STETH
 
-Streamlined template for getting started with Foundry and Solmate.
+Check upward and downward changes
 
-## Contributing
+Running 3 tests for test/SampleContract.t.sol:ReadTest
+[PASS] test_downwardDepeg() (gas: 60374)
+Logs:
+  price_old 77550108325988984
+  price_new 62734438481365675
 
-You will need a copy of [Foundry](https://github.com/foundry-rs/foundry) installed before proceeding. See the [installation guide](https://github.com/foundry-rs/foundry#installation) for details.
+[PASS] test_normalBehaviour() (gas: 39411)
+Logs:
+  price_old 69795097493390085
+  price_new 69704931645961861
 
-### Setup
-
-```sh
-git clone https://github.com/transmissions11/foundry-template.git
-cd foundry-template
-forge install
-```
-
-### Run Tests
-
-```sh
-forge test
-```
-
-### Update Gas Snapshots
-
-```sh
-forge snapshot
-```
+[PASS] test_upwardDepeg() (gas: 60260)
+Logs:
+  price_old 63450088630354623
+  price_new 76675424810558047
